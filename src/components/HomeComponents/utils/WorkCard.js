@@ -41,18 +41,6 @@ export  function WorkCard({ imgUrl, title, subtitle , learnMore, imageTitle, is_
           {subtitle}
         </Typography>
       </CardContent>
-      <CardActions>
-        <a href={learnMore} target='__blank'>
-        <Button  size="small">
-        <Typography  color="black">
-        Learn More
-        </Typography>
-          
-          
-          </Button>
-        </a>
-        
-      </CardActions>
     </CardWrapper>
   );
 }

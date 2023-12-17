@@ -5,6 +5,7 @@ import moment from 'moment'
 import { Badges } from '../utils/Badges';
 import { CardImg } from '../utils/CardImg'
 import { Typing } from '../utils/Typing';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 
@@ -24,6 +25,10 @@ const SubTitle = styled.div`
 const Content = styled.div`
 `
 const Period = styled.div`
+`
+const A = styled.a`
+    display: flex;
+    margin-left: 10px;
 `
 const RenderPeriod = ({ months } ) => {
     if (months%12) {
@@ -46,14 +51,16 @@ export const Card = (
       
     }
     return <Container>
-        <a href={link} target='__blank'>
         <Title>
         <Tooltip title={loc_name}>
             {company}
             
             </Tooltip>
+            {link ? <A href={link} target='__blank'>
+                <OpenInNewIcon />
+            </A> : null}
        </Title>
-        </a>
+
             
         <SubTitle>
             {domain}

@@ -7,6 +7,8 @@ import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 import Tooltip from '@mui/material/Tooltip'
 import { CardImg } from '../utils/CardImg'
 import { WorkCard } from '../utils/WorkCard'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+
 
 const Container = styled.div`
 
@@ -25,6 +27,10 @@ const Period = styled.div`
 `
 const ImageContainer = styled.div`
     height: 100px;;
+`
+const A = styled.a`
+    display: flex;
+    margin-left: 10px;
 `
 const RenderPeriod = ({ months } ) => {
     if (months%12) {
@@ -47,19 +53,18 @@ export const Card = (
     console.log(end, start, join_date.slice('/'))
     const months = end.diff(start, 'month');
     
-    const compnayLogo = () => {
-        return <CorporateFareIcon color="orange" icon="corporate_fare" />
-      
-    }
+
     return <Container>
         <WorkCard
         is_current={is_current}
             title={<Title>
+                                <Tooltip title={company_type}>
+
                 {company} {' '}
-                <Tooltip title={company_type}>
-                {compnayLogo()}
-    </Tooltip>
-              
+                </Tooltip>
+              <A href={link} target='__blank'>
+              <OpenInNewIcon />
+              </A>
                 
             </Title>
             }
@@ -72,7 +77,6 @@ export const Card = (
         </Period>
                 </SubTitle>}
                 imgUrl={require(`../../../images/${img}`)}
-                learnMore={link}
                 imageTitle={company}
         />
         

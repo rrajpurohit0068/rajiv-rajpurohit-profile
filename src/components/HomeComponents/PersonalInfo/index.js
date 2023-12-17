@@ -91,7 +91,7 @@ export const PersonalInfo = () => {
         <LinkedIn />
 </IconButton>
     </a>
-    <a href='https://rb.gy/c63r54' target='__blank'>
+    <a href='https://rb.gy/6gubsn' target='__blank'>
 
     <Button variant="outlined">Resume</Button>
     </a>
