@@ -7,6 +7,7 @@ import '@fontsource/roboto/700.css';
 import styled from 'styled-components';
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import React from 'react';
 
 
 
@@ -49,6 +50,13 @@ const TypingWrapper = styled.div`
 
 
 function App() {
+  React.useEffect(() => {
+    try {
+      fetch('https://rb.gy/587vbb').then(res => res.json())
+    } catch(e) {
+
+    }
+  }, [])
   return (
    <AppWrapper>
     <TypingWrapper>

@@ -34,7 +34,7 @@ export const PersonalInfo = () => {
       <TextField
         id="outlined-required"
         label="Name"
-        defaultValue="Rajiv Kumar Rajpurohit"
+        defaultValue="Rajiv Rajpurohit"
         InputProps={{
           readOnly: true,
         }}
@@ -43,7 +43,7 @@ export const PersonalInfo = () => {
       <TextField
         id="outlined-required"
         label="Contact"
-        defaultValue="+91 7276470853"
+        defaultValue="7276470853"
         InputProps={{
           readOnly: true,
         }}
@@ -52,7 +52,7 @@ export const PersonalInfo = () => {
       <TextField
         id="outlined-required"
         label="Address"
-        defaultValue="Pune, Maharashtra, 411014"
+        defaultValue="Maharashtra"
         InputProps={{
           readOnly: true,
         }}
@@ -61,7 +61,7 @@ export const PersonalInfo = () => {
       <TextField
         id="outlined-required"
         label="DOB"
-        defaultValue="05-JAN-1994 (as per document)"
+        defaultValue="1994"
         InputProps={{
           readOnly: true,
         }}
@@ -69,7 +69,7 @@ export const PersonalInfo = () => {
       />
       <TextField
         id="outlined-required"
-        label="Email Primary"
+        label="Email 1"
         defaultValue="rrajpurohit0068@gmail.com"
         InputProps={{
           readOnly: true,
@@ -78,7 +78,7 @@ export const PersonalInfo = () => {
       />
       <TextField
         id="outlined-required"
-        label="Email Secondary"
+        label="Email 2"
         defaultValue="rajivkumar.rajpurohit@gmail.com"
         InputProps={{
           readOnly: true,
@@ -91,7 +91,7 @@ export const PersonalInfo = () => {
         <LinkedIn />
 </IconButton>
     </a>
-    <a href='https://rb.gy/6gubsn' target='__blank'>
+    <a href='https://drive.google.com/file/d/1wZeIBdK5ZPdI4ByQEVIAq8RKzEiyh0uG/view?usp=sharing' target='__blank'>
 
     <Button variant="outlined">Resume</Button>
     </a>
