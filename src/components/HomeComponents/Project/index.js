@@ -7,17 +7,17 @@ import { Title } from '../utils/Title';
 const Container = styled.div`
 `
 
-const SubTitle= styled.h3`
+const SubTitle = styled.h3`
 `
 
 export const Project = () => {
     return <Container>
         <Title>
-        
+
 
             Projects
         </Title>
-        {data.map((info)=>{
+        {data.map((info) => {
             return <Card  {...info} />
         })}
     </Container>

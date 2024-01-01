@@ -18,13 +18,13 @@ const SubTitle = styled.h4`
 
 
 const RenderTime = ({ is_plus, time }) => {
-    return  <RenderTimeContainer>
-    {" " + time + (is_plus ? '+' : '') + ' YOE'}
+    return <RenderTimeContainer>
+        {" " + time + (is_plus ? '+' : '') + ' YOE'}
     </RenderTimeContainer>
 }
 
 
-export const Card = ({  is_plus, skills, time, title   }) => {
+export const Card = ({ is_plus, skills, time, title }) => {
     return <Container>
         <SubTitle>
             {title}

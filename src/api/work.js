@@ -32,7 +32,7 @@ export const data = [
         "profile": "Software Engineer",
         "join_date": "01/02/2018",
         "end_date": "01/04/2020",
-        "img":'company.png',
+        "img": 'company.png',
         "link": 'https://www.empower-solutions.com/'
     }
 ]

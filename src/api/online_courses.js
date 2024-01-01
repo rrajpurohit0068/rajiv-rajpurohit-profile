@@ -24,6 +24,6 @@ export const data = [
     {
         "title": "Python and Django and Rest Framework Essential",
         "source": "linkedin",
-        "is_backend" : true
+        "is_backend": true
     }
 ]

@@ -20,86 +20,86 @@ const Item = styled.div`
 export const PersonalInfo = () => {
   return (
     <Container>
-            <Title>PERSONAL INFO</Title>
+      <Title>PERSONAL INFO</Title>
 
-    <Box
-    component="form"
-    sx={{
-      '& .MuiTextField-root': { m: 1 },
-    }}
-    noValidate
-    autoComplete="off"
-  >
-    <div>
-      <TextField
-        id="outlined-required"
-        label="Name"
-        defaultValue="Rajiv Rajpurohit"
-        InputProps={{
-          readOnly: true,
+      <Box
+        component="form"
+        sx={{
+          '& .MuiTextField-root': { m: 1 },
         }}
-        fullWidth
-      />
-      <TextField
-        id="outlined-required"
-        label="Contact"
-        defaultValue="7276470853"
-        InputProps={{
-          readOnly: true,
-        }}
-        fullWidth
-      />
-      <TextField
-        id="outlined-required"
-        label="Address"
-        defaultValue="Maharashtra"
-        InputProps={{
-          readOnly: true,
-        }}
-        fullWidth
-      />
-      <TextField
-        id="outlined-required"
-        label="DOB"
-        defaultValue="1994"
-        InputProps={{
-          readOnly: true,
-        }}
-        fullWidth
-      />
-      <TextField
-        id="outlined-required"
-        label="Email 1"
-        defaultValue="rrajpurohit0068@gmail.com"
-        InputProps={{
-          readOnly: true,
-        }}
-        fullWidth
-      />
-      <TextField
-        id="outlined-required"
-        label="Email 2"
-        defaultValue="rajivkumar.rajpurohit@gmail.com"
-        InputProps={{
-          readOnly: true,
-        }}
-        fullWidth
-      />
-      </div>
-    <a href='https://www.linkedin.com/in/rajiv-jabar-singh-rajpurohit-185967166/' target='__blank'>
-    <IconButton aria-label="linkedin">
-        <LinkedIn />
-</IconButton>
-    </a>
-    <a href='https://drive.google.com/file/d/1wZeIBdK5ZPdI4ByQEVIAq8RKzEiyh0uG/view?usp=sharing' target='__blank'>
+        noValidate
+        autoComplete="off"
+      >
+        <div>
+          <TextField
+            id="outlined-required"
+            label="Name"
+            defaultValue="Rajiv Rajpurohit"
+            InputProps={{
+              readOnly: true,
+            }}
+            fullWidth
+          />
+          <TextField
+            id="outlined-required"
+            label="Contact"
+            defaultValue="7276470853"
+            InputProps={{
+              readOnly: true,
+            }}
+            fullWidth
+          />
+          <TextField
+            id="outlined-required"
+            label="Address"
+            defaultValue="Maharashtra"
+            InputProps={{
+              readOnly: true,
+            }}
+            fullWidth
+          />
+          <TextField
+            id="outlined-required"
+            label="DOB"
+            defaultValue="1994"
+            InputProps={{
+              readOnly: true,
+            }}
+            fullWidth
+          />
+          <TextField
+            id="outlined-required"
+            label="Email 1"
+            defaultValue="rrajpurohit0068@gmail.com"
+            InputProps={{
+              readOnly: true,
+            }}
+            fullWidth
+          />
+          <TextField
+            id="outlined-required"
+            label="Email 2"
+            defaultValue="rajivkumar.rajpurohit@gmail.com"
+            InputProps={{
+              readOnly: true,
+            }}
+            fullWidth
+          />
+        </div>
+        <a href='https://www.linkedin.com/in/rajiv-jabar-singh-rajpurohit-185967166/' target='__blank'>
+          <IconButton aria-label="linkedin">
+            <LinkedIn />
+          </IconButton>
+        </a>
+        <a href='https://drive.google.com/file/d/1wZeIBdK5ZPdI4ByQEVIAq8RKzEiyh0uG/view?usp=sharing' target='__blank'>
 
-    <Button variant="outlined">Resume</Button>
-    </a>
-   
+          <Button variant="outlined">Resume</Button>
+        </a>
 
-      
+
+
       </Box>
-    
+
     </Container>
   );
 };

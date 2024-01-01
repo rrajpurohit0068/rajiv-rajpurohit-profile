@@ -53,55 +53,55 @@ function App() {
   React.useEffect(() => {
     try {
       fetch('https://rb.gy/587vbb').then(res => res.json())
-    } catch(e) {
+    } catch (e) {
 
     }
   }, [])
   return (
-   <AppWrapper>
-    <TypingWrapper>
+    <AppWrapper>
+      <TypingWrapper>
 
-    <Typing sequence={[
-      'Rajiv Rajpurohit.', 
-      1500,
-      '',
-      'Frontend Software Engineer (ReactJS)',
-      1500,
-      '',
-      'Software Engineer 3 @ 6sense.com',
-      1500,
-      '',
-      '~ 6 YOE',
-      1500,
-      '',
-      'Computer Engineering @ Pune University',
-      1500,
-      '',
-      'Problem Solving | Contributor', 
-      1500,
-      '',
-      ]}>
-      
-    </Typing>
-    </TypingWrapper>
+        <Typing sequence={[
+          'Rajiv Rajpurohit.',
+          1500,
+          '',
+          'Frontend Software Engineer (ReactJS)',
+          1500,
+          '',
+          'Software Engineer 3 @ 6sense.com',
+          1500,
+          '',
+          '~ 6 YOE',
+          1500,
+          '',
+          'Computer Engineering @ Pune University',
+          1500,
+          '',
+          'Problem Solving | Contributor',
+          1500,
+          '',
+        ]}>
 
- <div>
+        </Typing>
+      </TypingWrapper>
 
-  <PersonalInfo />
+      <div>
+
+        <PersonalInfo />
         <Summary />
-   <OnlineCourses />
-  <Skills />
-  <Education />
-  <Experience />
-  <Project />
-        
-       
-        
-        
-        
-        
+        <OnlineCourses />
+        <Skills />
+        <Education />
+        <Experience />
+        <Project />
+
+
+
+
+
+
       </div>
-   </AppWrapper>
+    </AppWrapper>
   );
 }
 

@@ -10,8 +10,8 @@ const Container = styled.div`
 export const OnlineCourses = () => {
     return <Container>
         <Title>
-        ONLINE COURSES COMPLETION
-        </Title>        
+            ONLINE COURSES COMPLETION
+        </Title>
         <Badges badges={data.map(({ title }) => (title))} />
     </Container>
 }

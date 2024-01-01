@@ -18,7 +18,7 @@ font-weight: bold;
 export const Badges = ({ badges }) => {
     console.log(badges)
     return <RenderBadgesContainer>
-        {badges.map((badge) => (<Badge label={badge}  />))}
-    </RenderBadgesContainer> 
+        {badges.map((badge) => (<Badge label={badge} />))}
+    </RenderBadgesContainer>
 }
 

@@ -16,18 +16,18 @@ export const Typing = ({ sequence, classNames }) => {
   return (
     <TypeAnimationWrapper>
       <TypeAnimation
-    sequence={sequence}
-    wrapper="h1"
-    cursor={true}
-    repeat={Infinity}
-    style={{ 
-      fontSize: '4em',
-      display: 'block',
-      
-       }}
+        sequence={sequence}
+        wrapper="h1"
+        cursor={true}
+        repeat={Infinity}
+        style={{
+          fontSize: '4em',
+          display: 'block',
 
-    />
+        }}
+
+      />
     </TypeAnimationWrapper>
- 
+
   );
 };

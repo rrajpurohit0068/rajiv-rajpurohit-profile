@@ -16,6 +16,6 @@ export const Skills = () => {
             return skills.map((info) => {
                 return <Card {...info} />
             })
-        })}        
+        })}
     </Container>
 }

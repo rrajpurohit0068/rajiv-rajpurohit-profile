@@ -30,38 +30,38 @@ const A = styled.a`
     display: flex;
     margin-left: 10px;
 `
-const RenderPeriod = ({ months } ) => {
-    if (months%12) {
-        return '( ' +  Math.floor(months/12) + '.' + months%12 + '+ YOE' +  ' )'
+const RenderPeriod = ({ months }) => {
+    if (months % 12) {
+        return '( ' + Math.floor(months / 12) + '.' + months % 12 + '+ YOE' + ' )'
     }
-    return '( ' + months/12 + '+ YOE )' 
+    return '( ' + months / 12 + '+ YOE )'
 }
 
 const RenderDate = ({ start, end, is_current }) => {
-    return start.format('YYYY-MMM') +' - ' + (is_current ? 'Present' : end.format('YYYY-MMM')) + ' '
+    return start.format('YYYY-MMM') + ' - ' + (is_current ? 'Present' : end.format('YYYY-MMM')) + ' '
 }
 
 export const Card = (
-    { company, domain, loc_name, location, link , workdetails,   }
+    { company, domain, loc_name, location, link, workdetails, }
 ) => {
-    
+
     const compnayLogo = () => {
-       
+
         return <CorporateFareIcon color="orange" icon="corporate_fare" />
-      
+
     }
     return <Container>
         <Title>
-        <Tooltip title={loc_name}>
-            {company}
-            
+            <Tooltip title={loc_name}>
+                {company}
+
             </Tooltip>
             {link ? <A href={link} target='__blank'>
                 <OpenInNewIcon />
             </A> : null}
-       </Title>
+        </Title>
 
-            
+
         <SubTitle>
             {domain}
         </SubTitle>

@@ -17,14 +17,14 @@ export const Experience = () => {
     console.log(data);
     return <Container>
         <Title>
-        EXPERIENCE (~ 6 YEARS OF EXPERIENCE)
-            </Title>      
-            <Content>
-                {
-                    data.map((info) => {
-                        return <Card {...info} />
-                    })  
-                }
-                </Content>  
+            EXPERIENCE (~ 6 YEARS OF EXPERIENCE)
+        </Title>
+        <Content>
+            {
+                data.map((info) => {
+                    return <Card {...info} />
+                })
+            }
+        </Content>
     </Container>
 }
