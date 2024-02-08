@@ -19,15 +19,17 @@ import { Project } from './components/HomeComponents/Project';
 import { Skills } from './components/HomeComponents/Skills';
 import { Summary } from './components/HomeComponents/Summary';
 import { Typing } from './components/HomeComponents/utils/Typing';
-
+import { Loader } from './Loader';
 
 const AppWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: linear-gradient(45deg, #6fc7b5 0%,#13bdce 20%);
   padding: 4rem;
+  animation: gradient 2.5*2s ease-in-out infinite;
+
 `;
 
 const TypingWrapper = styled.div`
@@ -50,13 +52,19 @@ const TypingWrapper = styled.div`
 
 
 function App() {
+  const [loading, setLoader] = React.useState(true);
   React.useEffect(() => {
-    try {
-      fetch('https://rb.gy/587vbb').then(res => res.json())
-    } catch (e) {
-
-    }
+    setTimeout(() => {
+      setLoader(false);
+    }, 2500)
+    // setLoader(false)
   }, [])
+  if (loading) {
+
+    return     <AppWrapper>
+<Loader />
+</AppWrapper>
+  }
   return (
     <AppWrapper>
       <TypingWrapper>

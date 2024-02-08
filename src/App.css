@@ -7,6 +7,7 @@ body {
 
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
 }
 
 
@@ -24,4 +25,10 @@ label {
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+@keyframes gradient{
+  50%{
+    background-position: 100% 0%;
+  }
 }
